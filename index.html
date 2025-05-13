@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-post">
+            <article>
+                <img src="images/featured.jpg" alt="Featured post image">
+                <h2>Featured Post Title</h2>
+                <p class="post-meta">Published on <time datetime="2023-05-15">May 15, 2023</time> by Admin</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                <a href="post.html" class="read-more">Read More</a>
+            </article>
+        </section>
+
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <img src="images/post1.jpg" alt="Post 1 image">
+                    <h3>Post Title 1</h3>
+                    <p class="post-meta">Published on <time datetime="2023-05-10">May 10, 2023</time></p>
+                    <p>Vivamus luctus eros aliquet convallis ultricies.</p>
+                    <a href="post.html" class="read-more">Read More</a>
+                </article>
+
+                <article class="post-card">
+                    <img src="images/post2.jpg" alt="Post 2 image">
+                    <h3>Post Title 2</h3>
+                    <p class="post-meta">Published on <time datetime="2023-05-05">May 5, 2023</time></p>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    <a href="post.html" class="read-more">Read More</a>
+                </article>
+
+                <article class="post-card">
+                    <img src="images/post3.jpg" alt="Post 3 image">
+                    <h3>Post Title 3</h3>
+                    <p class="post-meta">Published on <time datetime="2023-04-28">April 28, 2023</time></p>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    <a href="post.html" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Newsletter</h2>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="subscription-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="blog-post">
+            <h2>The Art of Mindful Living</h2>
+            <p class="post-meta">Published on <time datetime="2023-05-15">May 15, 2023</time> by Admin</p>
+            
+            <img src="images/featured.jpg" alt="Blog post image" class="post-image">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+            
+            <p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.</p>
+            
+            <h3>Finding Balance</h3>
+            
+            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.</p>
+            
+            <blockquote>
+                <p>"The present moment is the only moment available to us, and it is the door to all moments."</p>
+                <footer>— Thich Nhat Hanh</footer>
+            </blockquote>
+            
+            <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.</p>
+            
+            <div class="post-tags">
+                <span>Tags:</span>
+                <a href="#">Mindfulness</a>
+                <a href="#">Wellness</a>
+                <a href="#">Lifestyle</a>
+            </div>
+            
+            <div class="post-actions">
+                <button id="like-btn">Like <span id="like-count">0</span></button>
+                <button id="share-btn">Share</button>
+            </div>
+        </article>
+        
+        <section class="comments-section">
+            <h3>Comments</h3>
+            
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Name:</label>
+                    <input type="text" id="comment-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comment-text">Comment:</label>
+                    <textarea id="comment-text" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Post Comment</button>
+            </form>
+            
+            <div id="comments-list">
+                <!-- Comments will be added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
